@@ -13,10 +13,9 @@ export const metadata: Metadata = {
     "WodiNote is a fully offline, end-to-end encrypted notes app. Keep your data private and secure on your device with AES-256-GCM encryption.",
   keywords: ["notes", "encrypted", "offline", "privacy", "secure", "AES-256-GCM", "PWA"],
   authors: [{ name: "WodiNote" }],
-  creator: "WodiNote",
-  publisher: "WodiNote",
+  creator: "Caleb Wodi",
+  publisher: "BuiltByWodi",
   robots: "index, follow",
-  generator: "v0.app",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
