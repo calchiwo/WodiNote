@@ -1,4 +1,4 @@
-const CACHE_NAME = "wodinote-v1"
+const CACHE_NAME = "wodinote-v1.1"
 const STATIC_ASSETS = ["/", "/index.html", "/manifest.json", "/wodi-logo.jpg"]
 
 // Install event - cache static assets
