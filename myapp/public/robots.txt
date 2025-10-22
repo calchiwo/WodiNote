@@ -1,9 +1,0 @@
-# Allow all search engines to crawl the site
-User-agent: *
-Allow: /
-
-# Sitemap location
-Sitemap: https://wodinote.app/sitemap.xml
-
-# Crawl delay (optional - in seconds)
-Crawl-delay: 1
