@@ -6,7 +6,7 @@
 /* Light mode (default) colors */
 :root {
   --background: #ffffff;
-  --foreground: #0000003;
+  --foreground: #000000;
   --card: #f5f5f5;
   --card-foreground: #000000;
   --popover: #ffffff;
