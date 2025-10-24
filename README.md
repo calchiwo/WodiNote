@@ -30,7 +30,7 @@ Big dreams start small 😎, and this is just the beginning.
 
 ## How to Use
 
-1. Open (WodiNote){https://wodinote.vercel.app} in your browser
+1. Open [WodiNote](https://wodinote.vercel.app) in your browser
 
 2. Click the + button to create a new note
 
