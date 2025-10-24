@@ -46,7 +46,7 @@ No account required. No cloud. Your notes stay yours.
 
 ## Support
 
-Have feedback, questions, or ideas? Reach me on X (Twitter): [@calchiwo](https://x.com/calchiwo)
+If you have feedback, questions, or ideas. Reach me on X (Twitter): [@calchiwo](https://x.com/calchiwo)
 
 ---
 
