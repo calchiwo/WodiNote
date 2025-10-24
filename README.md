@@ -10,7 +10,7 @@ WodiNote is a secure notes application built to keep your thoughts truly private
 
 Hi! I’m Caleb Wodi, a self-taught coder who started learning programming using my mum’s phone. WodiNote started as WodiWebify, and now it’s a fully polished notes app designed to give you total privacy and control over your information.
 
-[Big dreams do really start small oo 😎, and this is just the beginning.]()
+[Big dreams do really start small oo 😎, and this is just the beginning.](https://x.com/calchiwo/status/1981462641970217212?t=swnzILeCdYm867fLL3PM3w&s=19)
 
 ---
 
