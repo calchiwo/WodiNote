@@ -8,7 +8,7 @@ WodiNote is a secure notes application built to keep your thoughts truly private
 
 ## About Me
 
-Hi! I’m Caleb Chikanka Wodi, a self-taught coder who started learning programming using my mum’s phone. WodiNote started as WodiWebify, and now it’s a fully polished notes app designed to give you total privacy and control over your information.
+Hi! I’m Caleb Wodi, a self-taught coder who started learning programming using my mum’s phone. WodiNote started as WodiWebify, and now it’s a fully polished notes app designed to give you total privacy and control over your information.
 
 Big dreams start small 😎, and this is just the beginning.
 
@@ -16,9 +16,9 @@ Big dreams start small 😎, and this is just the beginning.
 
 ## Features
 
-✅ Fully offline — your notes never leave your device
+✅ Fully offline: your notes never leave your device
 
-✅ AES-256-GCM encryption — strongest privacy for your data
+✅ AES-256-GCM encryption: strongest privacy for your data
 
 ✅ Simple, clean, and intuitive interface
 
@@ -54,10 +54,10 @@ Optional syncing while keeping encryption strong
 
 ## Support
 
-Have feedback, questions, or ideas? Reach me on X (Twitter): @calchiwo
+Have feedback, questions, or ideas? Reach me on X (Twitter): [@calchiwo](https://x.com/calchiwo)
 
 ---
 
 ## License
 
-This project is licensed under the MIT License — see the LICENSE file for details.
+This project is licensed under the [MIT License](LICENSE) : see the LICENSE file for details.
