@@ -24,6 +24,8 @@ Hi! I’m Caleb Wodi, a self-taught coder who started learning programming using
 
 ✅ Create, edit, pin, and delete notes
 
+✅ Swipe-to-delete any note for quick management
+
 ✅ Designed for speed and security
 
 ---
@@ -39,16 +41,6 @@ Hi! I’m Caleb Wodi, a self-taught coder who started learning programming using
 4. Your note is automatically encrypted and saved locally
 
 No account required. No cloud. Your notes stay yours.
-
----
-
-## Future Plans
-
-Add folders to organize notes
-
-Implement themes (dark/light mode)
-
-Optional syncing while keeping encryption strong
 
 ---
 
