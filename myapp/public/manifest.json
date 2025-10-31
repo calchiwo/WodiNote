@@ -1,5 +1,5 @@
 {
-  "name": "WodiNote - Encrypted Notes",
+  "name": "WodiNote - Encrypted Notes App",
   "short_name": "WodiNote",
   "description": "A fully offline, end-to-end encrypted note-taking app with AES-256-GCM encryption",
   "start_url": "/",
