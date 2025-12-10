@@ -75,32 +75,4 @@ WodiNote started as WodiWebify, and now it’s a fully polished notes app design
 
 ✅ Create, edit, pin, and delete notes
 
-✅ Swipe-to-delete any note for quick management
-
-✅ Designed for speed and security
-
----
-
-## How to Use
-
-1. Open [WodiNote](https://wodinote.vercel.app) in your browser
-
-2. Click the + button to create a new note
-
 3. Add a title and your note content
-
-4. Your note is automatically encrypted and saved locally
-
-No account required. No cloud. Your notes stay yours.
-
----
-
-## Support
-
-If you have feedback, questions, or ideas. Reach me on X (Twitter): [@calchiwo](https://x.com/calchiwo)
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE) : see the LICENSE file for details.
