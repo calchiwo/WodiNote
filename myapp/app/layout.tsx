@@ -36,22 +36,22 @@ export const metadata: Metadata = {
     siteName: "WodiNote",
     title: "WodiNote – Fully Encrypted Offline Notes",
     description:
-      "WodiNote is a fully offline, end-to-end encrypted notes app. Keep your data private and secure on your device with AES-256-GCM encryption.",
+      "WodiNote is an offline, end-to-end encrypted notes app. Keep your data private and secure on your device with AES-256-GCM encryption.",
     images: [
       {
         url: "/wodi-logo.jpg",
         width: 1200,
         height: 630,
-        alt: "WodiNote - Encrypted Notes App",
+        alt: "WodiNote: Encrypted Notes App",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "WodiNote – Fully Encrypted Offline Notes",
+    title: "WodiNote: Encrypted Notes App",
     description:
-      "WodiNote is a fully offline, end-to-end encrypted notes app. Keep your data private and secure on your device with AES-256-GCM encryption.",
+      "WodiNote is an offline, end-to-end encrypted notes app. Keep your data private and secure on your device with AES-256-GCM encryption.",
     images: ["/wodi-logo.jpg"],
     creator: "@wodinote",
   },
@@ -80,7 +80,7 @@ export default function RootLayout({
         <meta name="googlebot" content="index, follow" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="7 days" />
-        <meta name="canonical" content="https://wodinote.app" />
+        <meta name="canonical" content="https://wodinote.vercel.app" />
         <link rel="apple-touch-icon" href="/wodi-logo.jpg" />
         <link rel="manifest" href="/manifest.json" />
       </head>
