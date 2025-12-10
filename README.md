@@ -28,8 +28,8 @@ No account. No sync. Your notes stay in your browser storage.
 
 ## Tech Stack
 
-- Vite
-- Vanilla JavaScript
+- Typescript
+- Tailwind CSS
 - AES-256-GCM Web Crypto API
 - LocalStorage for encrypted data
 
@@ -43,12 +43,11 @@ You can install WodiNote as a PWA.
 
 ## Support
 
-Report bugs or share feedback on X.  
-https://x.com/calchiwo
+If you have feedback, questions, or ideas. Reach me on X (Twitter): [@calchiwo](https://x.com/calchiwo)
 
 ## License
 
-MIT License. See the LICENSE file for details.
+This project is licensed under the [MIT License](LICENSE) : see the LICENSE file for details.
 
 
 
