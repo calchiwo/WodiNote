@@ -24,8 +24,6 @@ WodiNote is an offline, end-to-end encrypted notes app. WodiNote keeps your note
 3. Add a title and content
 4. Your note saves and encrypts on your device
 
-No account. No sync. Your notes stay in your browser storage.
-
 ## Tech Stack
 
 - Typescript
