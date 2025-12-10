@@ -28,7 +28,7 @@ WodiNote is an offline, end-to-end encrypted notes app. WodiNote keeps your note
 
 - Typescript
 - AES-256-GCM Web Crypto API
-- Next.js
+- JavaScript
 - Tailwind CSS
 - LocalStorage for encrypted data
 
