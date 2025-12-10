@@ -1,54 +1,50 @@
-# WodiNote 📝
+# WodiNote
 
-Your private, offline, end-to-end encrypted notes app.
+WodiNote is an offline, end-to-end encrypted notes app. WodiNote keeps your notes private. Everything runs offline. Your data stays on your device and uses AES-256-GCM encryption, so only you can access them.
 
-WodiNote is a secure notes application built to keep your thoughts truly private. All notes are fully offline and encrypted using AES-256-GCM, so only you can access them. No cloud storage, no leaks, no compromises.
-
----
-
-## About Me
-
-Hi! I’m Caleb Wodi, a self-taught programmer who started learning programming using my mum’s phone. WodiNote started as WodiWebify, and now it’s a fully polished notes app designed to give you total privacy and control over your information.
-
-[Big dreams do really start small oo 😎, and this is just the beginning.](https://x.com/calchiwo/status/1981462641970217212?t=swnzILeCdYm867fLL3PM3w&s=19)
-
----
+WodiNote started as WodiWebify, and now it’s a fully polished notes app designed to give you total privacy and control over your information.
 
 ## Features
 
-✅ Fully offline: your notes never leave your device
+- Offline storage, no cloud
+- AES-256-GCM encryption
+- Fast load time
+- Create, edit, pin, and delete notes
+- Swipe to delete
+- Clean interface
+- Local first performance
 
-✅ AES-256-GCM encryption: strongest privacy for your data
+## Screenshots
 
-✅ Simple, clean, and intuitive interface
-
-✅ Create, edit, pin, and delete notes
-
-✅ Swipe-to-delete any note for quick management
-
-✅ Designed for speed and security
-
----
+<!-- Add your screenshots here -->
+<!-- Example: ![Home Screen](./screenshots/home.png) -->
 
 ## How to Use
 
-1. Open [WodiNote](https://wodinote.vercel.app) in your browser
+1. Open the app at https://wodinote.vercel.app
+2. Tap the plus button and create a note
+3. Add a title and content
+4. Your note saves and encrypts on your device
 
-2. Click the + button to create a new note
+## Tech Stack
 
-3. Add a title and your note content
+- Typescript
+- AES-256-GCM Web Crypto API
+- JavaScript
+- Tailwind CSS
+- LocalStorage for encrypted data
 
-4. Your note is automatically encrypted and saved locally
+## Install
 
-No account required. No cloud. Your notes stay yours.
+You can install WodiNote as a PWA.
 
----
+1. Open the site
+2. Open your browser menu
+3. Tap Install or Add to Home Screen
 
 ## Support
 
-If you have feedback, questions, or ideas. Reach me on X (Twitter): [@calchiwo](https://x.com/calchiwo)
-
----
+If you have feedback, questions, or want to collaborate or report bugs, reach me on LinkedIn: [@calchiwo](https://linkedin.com/in/calchiwo) or on X: [@calchiwo](https://x.com/calchiwo)
 
 ## License
 
