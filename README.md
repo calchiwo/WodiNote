@@ -44,7 +44,7 @@ You can install WodiNote as a PWA.
 
 ## Support
 
-If you have feedback, questions, collab, or want to report bugs. Reach me on Linkedln: [@calchiwo](https://linkendin.com/in/calchiwo) or X (Twitter): [@calchiwo](https://x.com/calchiwo)
+If you have feedback, questions, or want to collaborate or report bugs, reach me on LinkedIn: [@calchiwo](https://linkedin.com/in/calchiwo) or on X: [@calchiwo](https://x.com/calchiwo)
 
 ## License
 
