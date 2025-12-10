@@ -2,6 +2,8 @@
 
 WodiNote is an offline, end-to-end encrypted notes app. WodiNote keeps your notes private. Everything runs offline. Your data stays on your device and uses AES-256-GCM encryption, so only you can access them.
 
+WodiNote started as WodiWebify, and now it’s a fully polished notes app designed to give you total privacy and control over your information.
+
 ## Features
 
 - Offline storage, no cloud
@@ -47,6 +49,3 @@ If you have feedback, questions, or ideas. Reach me on X (Twitter): [@calchiwo](
 ## License
 
 This project is licensed under the [MIT License](LICENSE) : see the LICENSE file for details.
-
-
-WodiNote started as WodiWebify, and now it’s a fully polished notes app designed to give you total privacy and control over your information.
