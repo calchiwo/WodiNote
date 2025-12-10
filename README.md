@@ -29,8 +29,9 @@ No account. No sync. Your notes stay in your browser storage.
 ## Tech Stack
 
 - Typescript
-- Tailwind CSS
 - AES-256-GCM Web Crypto API
+- Next.js
+- Tailwind CSS
 - LocalStorage for encrypted data
 
 ## Install
