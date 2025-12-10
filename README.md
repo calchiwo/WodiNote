@@ -63,16 +63,3 @@ WodiNote is a secure notes application built to keep your thoughts truly private
 
 WodiNote started as WodiWebify, and now it’s a fully polished notes app designed to give you total privacy and control over your information.
 
----
-
-## Features
-
-✅ Fully offline: your notes never leave your device
-
-✅ AES-256-GCM encryption: strongest privacy for your data
-
-✅ Simple, clean, and intuitive interface
-
-✅ Create, edit, pin, and delete notes
-
-3. Add a title and your note content
