@@ -1,6 +1,6 @@
 # WodiNote
 
-WodiC is an offline, end-to-end encrypted notes app. WodiNote keeps your notes private. Everything runs offline. Your data stays on your device and uses AES-256-GCM encryption.
+WodiNote is an offline, end-to-end encrypted notes app. WodiNote keeps your notes private. Everything runs offline. Your data stays on your device and uses AES-256-GCM encryption.
 
 ## Features
 
