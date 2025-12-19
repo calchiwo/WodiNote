@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "WodiNote – Fully Encrypted Offline Notes",
+  title: "WodiNote: Fully Encrypted Offline Notes App",
   description:
     "WodiNote is a fully offline, end-to-end encrypted notes app. Keep your data private and secure on your device with AES-256-GCM encryption.",
   keywords: ["notes", "encrypted", "offline", "privacy", "secure", "AES-256-GCM", "PWA"],
