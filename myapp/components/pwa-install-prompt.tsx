@@ -9,33 +9,31 @@ interface BeforeInstallPromptEvent extends Event {
 }
 
 interface PWAInstallPromptProps {
+  open: boolean
   onClose: () => void
 }
 
-export default function PWAInstallPrompt({ onClose }: PWAInstallPromptProps) {
+export default function PWAInstallPrompt({
+  open,
+  onClose,
+}: PWAInstallPromptProps) {
   const [deferredPrompt, setDeferredPrompt] =
     useState<BeforeInstallPromptEvent | null>(null)
-  const [isInstallable, setIsInstallable] = useState(false)
 
   useEffect(() => {
-    // Exit if already installed
-    if (
+    const isInstalled =
       window.matchMedia("(display-mode: standalone)").matches ||
       (window.navigator as any).standalone === true
-    ) {
-      onClose()
-      return
-    }
+
+    if (isInstalled) return
 
     const handleBeforeInstallPrompt = (e: Event) => {
       e.preventDefault()
       setDeferredPrompt(e as BeforeInstallPromptEvent)
-      setIsInstallable(true)
     }
 
     const handleAppInstalled = () => {
       setDeferredPrompt(null)
-      setIsInstallable(false)
       onClose()
     }
 
@@ -61,13 +59,12 @@ export default function PWAInstallPrompt({ onClose }: PWAInstallPromptProps) {
       console.error("PWA install error:", error)
     } finally {
       setDeferredPrompt(null)
-      setIsInstallable(false)
       onClose()
     }
   }
 
-  // Do not render if install is not possible
-  if (!isInstallable) return null
+  // Listener mounted, but UI hidden until open === true
+  if (!open || !deferredPrompt) return null
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
@@ -88,14 +85,14 @@ export default function PWAInstallPrompt({ onClose }: PWAInstallPromptProps) {
             You just saved your first note
           </h2>
           <p className="text-muted-foreground text-sm mb-6">
-            Install WodiNote to use it offline and keep all your notes private.
+            Install WodiNote to use it offline and keep your notes private.
           </p>
 
           <button
             onClick={handleInstallClick}
             className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
           >
-            Install Now ✅
+            Install WodiNote
           </button>
 
           <button
