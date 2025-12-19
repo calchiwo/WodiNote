@@ -1,51 +1,14 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { getDeferredPrompt, clearDeferredPrompt } from "@/lib/pwa-install"
 import { X } from "lucide-react"
-
-interface BeforeInstallPromptEvent extends Event {
-  prompt(): Promise<void>
-  userChoice: Promise<{ outcome: "accepted" | "dismissed" }>
-}
 
 interface PWAInstallPromptProps {
   onClose: () => void
 }
 
 export default function PWAInstallPrompt({ onClose }: PWAInstallPromptProps) {
-  const [deferredPrompt, setDeferredPrompt] =
-    useState<BeforeInstallPromptEvent | null>(null)
-
-  useEffect(() => {
-    // If already installed, never show modal
-    if (window.matchMedia("(display-mode: standalone)").matches) {
-      onClose()
-      return
-    }
-
-    if ((window.navigator as any).standalone === true) {
-      onClose()
-      return
-    }
-
-    const handleBeforeInstallPrompt = (e: Event) => {
-      e.preventDefault()
-      setDeferredPrompt(e as BeforeInstallPromptEvent)
-    }
-
-    const handleAppInstalled = () => {
-      setDeferredPrompt(null)
-      onClose()
-    }
-
-    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt)
-    window.addEventListener("appinstalled", handleAppInstalled)
-
-    return () => {
-      window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt)
-      window.removeEventListener("appinstalled", handleAppInstalled)
-    }
-  }, [onClose])
+  const deferredPrompt = getDeferredPrompt()
 
   const handleInstallClick = async () => {
     if (!deferredPrompt) return
@@ -57,11 +20,10 @@ export default function PWAInstallPrompt({ onClose }: PWAInstallPromptProps) {
       console.error("[v0] Error during PWA install:", error)
     }
 
-    setDeferredPrompt(null)
+    clearDeferredPrompt()
     onClose()
   }
 
-  // Do not render if install is not available
   if (!deferredPrompt) {
     return null
   }
