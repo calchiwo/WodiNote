@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useState, useEffect } from "react"
 import { X } from "lucide-react"
 
 interface BeforeInstallPromptEvent extends Event {
@@ -9,23 +9,24 @@ interface BeforeInstallPromptEvent extends Event {
 }
 
 interface PWAInstallPromptProps {
-  open: boolean
   onClose: () => void
 }
 
-export default function PWAInstallPrompt({
-  open,
-  onClose,
-}: PWAInstallPromptProps) {
+export default function PWAInstallPrompt({ onClose }: PWAInstallPromptProps) {
   const [deferredPrompt, setDeferredPrompt] =
     useState<BeforeInstallPromptEvent | null>(null)
 
   useEffect(() => {
-    const isInstalled =
-      window.matchMedia("(display-mode: standalone)").matches ||
-      (window.navigator as any).standalone === true
+    // If already installed, never show modal
+    if (window.matchMedia("(display-mode: standalone)").matches) {
+      onClose()
+      return
+    }
 
-    if (isInstalled) return
+    if ((window.navigator as any).standalone === true) {
+      onClose()
+      return
+    }
 
     const handleBeforeInstallPrompt = (e: Event) => {
       e.preventDefault()
@@ -41,10 +42,7 @@ export default function PWAInstallPrompt({
     window.addEventListener("appinstalled", handleAppInstalled)
 
     return () => {
-      window.removeEventListener(
-        "beforeinstallprompt",
-        handleBeforeInstallPrompt
-      )
+      window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt)
       window.removeEventListener("appinstalled", handleAppInstalled)
     }
   }, [onClose])
@@ -56,48 +54,52 @@ export default function PWAInstallPrompt({
       await deferredPrompt.prompt()
       await deferredPrompt.userChoice
     } catch (error) {
-      console.error("PWA install error:", error)
-    } finally {
-      setDeferredPrompt(null)
-      onClose()
+      console.error("[v0] Error during PWA install:", error)
     }
+
+    setDeferredPrompt(null)
+    onClose()
   }
 
-  // Listener mounted, but UI hidden until open === true
-  if (!open || !deferredPrompt) return null
+  // Do not render if install is not available
+  if (!deferredPrompt) {
+    return null
+  }
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-      <div className="bg-card text-card-foreground rounded-lg shadow-lg max-w-sm w-full">
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 animate-in fade-in duration-300">
+      <div className="bg-card text-card-foreground rounded-lg shadow-lg max-w-sm w-full animate-in slide-in-from-bottom-4 duration-300">
         <div className="flex justify-end p-4">
           <button
             onClick={onClose}
-            className="text-muted-foreground hover:text-foreground"
+            className="text-muted-foreground hover:text-foreground transition-colors"
             aria-label="Close"
           >
             <X size={20} />
           </button>
         </div>
 
-        <div className="px-6 pb-6 text-center">
-          <p className="text-2xl mb-2">🎉</p>
-          <h2 className="text-xl font-semibold mb-3">
-            You just saved your first note
-          </h2>
-          <p className="text-muted-foreground text-sm mb-6">
-            Install WodiNote to use it offline and keep your notes private.
-          </p>
+        <div className="px-6 pb-6">
+          <div className="text-center mb-4">
+            <p className="text-2xl mb-2">🎉</p>
+            <h2 className="text-xl font-semibold mb-3">
+              You just saved your first note!
+            </h2>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Install WodiNote to use it fully offline and keep all your notes private.
+            </p>
+          </div>
 
           <button
             onClick={handleInstallClick}
-            className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
           >
-            Install WodiNote
+            Install Now ✅
           </button>
 
           <button
             onClick={onClose}
-            className="w-full mt-3 text-muted-foreground text-sm py-2 hover:text-foreground"
+            className="w-full mt-3 text-muted-foreground hover:text-foreground transition-colors text-sm py-2"
           >
             Maybe later
           </button>
