@@ -16,8 +16,7 @@ WodiNote started as WodiWebify, and now it’s a fully polished notes app design
 
 ## Screenshots
 
-<!-- Add your screenshots here -->
-<!-- Example: ![Home Screen](./screenshots/home.png) -->
+[Home Screen](./screenshots/wodinote-demo.mp4)
 
 ## How to Use
 
